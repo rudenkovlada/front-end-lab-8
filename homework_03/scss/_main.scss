@@ -1,0 +1,106 @@
+html {
+  background-color: $bg-color;
+}
+#content {
+  background-color: $content-bg-color;
+ padding: $content-padding;
+}
+p {
+  color: $p-color;
+}
+h2 {
+  color: $h2-color;
+}
+h1 {
+  color: $h1-color;
+}
+h1 {
+  text-align: $h1-align;
+}
+img {
+  border: $img-border;
+  padding: $img-padding;
+  float: $img-float-left;
+  margin-bottom: $img-margin;
+  margin-right: $img-margin;
+}
+img.img-right {
+  float: $img-float-right;
+  margin-left: $img-right-margin-left;
+  margin-bottom: $img-right-margin-bottom;
+  margin-right: $img-right-margin-right;
+
+}
+.brief {
+  background-color: $brief-bg;
+  float: $brief-float;
+  width: $brief-weight;
+  padding: $brief-padding;
+  margin-right: $brief-margin-right;
+  margin-bottom: $brief-margin-button;
+}
+caption {
+  text-align: $caption-text;
+}
+table {
+   width: $table-width;
+   border-collapse: $table-border-collapse;
+ }
+th {
+   background-color: $th-bg-color;
+   text-align: $th-text;
+   padding-left: $th-padding-left;
+   padding-bottom: $th-padding-bottom;
+   padding-top: $th-padding-top;
+   text-transform: $th-text-transform;
+   font-weight: $th-font-weight;
+ }
+th:not(:first-child) {
+   border-left: $th-border-left;
+ }
+td {
+   color: $td-color;
+   padding-bottom: $td-vertical-bottom;
+   padding-top: $td-vertical-bottom;
+   padding-left: $td-padding-left;
+   background-color: $td-background-color;
+   border-bottom: $td-border-bottom;
+ }
+a {
+     color: $a-color;
+   }
+.col2-area{
+    display:flex;
+  }
+.col2-area div:first-child{
+  margin-right: $col2-area-margin-right;
+}
+.input-area{
+  margin-bottom: $input-area-margin-bottom;
+}
+form, input,textarea {
+   display: $form-input-textarea-display;
+   color: $form-input-textarea-color;
+   width: $form-input-textarea-width;
+ }
+input{
+   padding: $input-padding;
+ }
+label{
+   margin-bottom: $label-margin-bottom;
+ }
+form {
+  display: $form-display;
+}
+input, textarea{
+  margin-top: $input-textarea-margin-top;
+}
+button {
+  margin-top: $button-margin-top;
+  color: $button-color;
+  border: $button-border $button-color;
+  width: $button-width;
+  height: $button-height;
+  font-size: $button-font-size;
+  background-color: $button-bg-color;
+}
