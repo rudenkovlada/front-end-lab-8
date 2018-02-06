@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*TODO*/
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav li a:hover {
+    color: #39c2d7;
+}
+
+.banner-section {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+}
+
+.banner-section div {
+    color: white;
+}
+
+.news-container {
+    display: grid;
+}
+
+.img img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.news-container div {
+    background: #99989a;
+    padding: 10px;
+    text-align: center;
+}
+
+.news-container div:hover {
+    background: #39c2d7;
+}
+
+.news-container div img {
+    position: relative;
+    overflow: hidden;
+}
+
+footer {
+    color: #fff;
+    background-color: #39c2d7;
+}
+
+.footer-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-nav li {
+    float: left;
+    margin: 10px;
+}
+
+.footer-nav li a {
+    text-decoration: underline;
+}
+
+.footer-nav li a:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        margin: 10px 150px 10px 150px;
+        height: 54px;
+    }
+    .logo {
+        height: 54px;
+        float: left;
+        margin-right: 50px;
+    }
+    .banner-section {
+        height: 400px;
+    }
+    .banner-section div {
+        margin: auto 150px auto 150px;
+        color: white;
+        font-size: 3em;
+        width: 9em;
+        padding-top: 60px;
+    }
+    main section:nth-child(2) {
+        margin: 25px 150px 25px 150px;
+    }
+    .news-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    footer {
+        padding: 25px 150px 25px 150px;
+    }
+
+    .footer-nav {
+        float: left;
+    }
+    footer div{
+        height: 36px;
+        position: relative;
+    }
+    footer div span{
+        position: absolute;
+        margin: 10px 0 10px 0;
+    }
+
+}
+@media screen and (max-width: 900px) and (min-width: 575px){
+    header {
+        height: 106px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav {
+        float: right;
+        position: relative;
+        left: -50%;
+        text-align: left;
+    }
+
+    .topnav {
+        position: relative;
+        left: 50%;
+    }
+
+    .banner-section {
+        height: 500px;
+    }
+
+    .banner-section div {
+        margin: auto;
+        font-size: 2em;
+        width: 18em;
+        padding-top: 60px;
+    }
+
+    .news-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    }
+
+    .news-container h3, p {
+        text-align: left;
+        margin-bottom: 3px;
+    }
+
+    main section:nth-child(2) {
+    margin: auto auto auto auto;
+    padding: 15px;
+}
+
+    footer {
+        padding: auto auto auto auto;
+    }
+    footer div{
+        height: 36px;
+        position: relative;
+    }
+    footer div span{
+        position: absolute;
+        margin: 10px 0 10px 0;
+    }
+
+    .footer-nav {
+        float: left;
+    }
+
+    .footer-nav li {
+        float: left;
+        margin: 10px;
+    }
+
+    .footer-nav li a {
+        text-decoration: underline;
+    }
+
+    .footer-nav li a:hover {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav {
+        float: none;
+        position: relative;
+        left: auto;
+        text-align: left;
+        display: block;
+    }
+
+    .topnav {
+        position: relative;
+        left: auto;
+    }
+
+    .topnav li {
+        background: #e3e2e4;
+        border: 1px solid #b2b1b3;
+        border-left: none;
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .topnav li a {
+        text-align: left;
+    }
+
+    .banner-section {
+        height: 250px;
+        position: relative;
+    }
+
+    .banner-section div {
+        position: absolute;
+        width: 90%;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 1.3em;
+        background-color: #39c2d7;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 25px 0 25px 0;
+        text-align: center;
+    }
+    footer div{
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-bottom: 20px;
+        float: none;
+        position: relative;
+    }
+    .footer-nav ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        float: none;
+    }
+
+    .footer-nav li {
+        margin: 2px;
+    }
+}
